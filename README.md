@@ -1,6 +1,26 @@
 # Teste de seleção para vaga de Java
 
-## Faça um fork desse projeto e siga as instruções a seguir utilizando esse projeto.
+##Documentação do projeto:
+
+```http://localhost:8080/swagger-ui.html```
+
+## Endpoint exemplo do cálculo de frete:
+* **get:** ```http://localhost:8080/frete/20.8/38700162/38840000/Igor Mendes```
+
+* **post:** ``` http://localhost:8080/frete ```
+### JSON:
+````
+{
+    "peso" : 20.8,
+    "cepOrigem" : "38700162",
+    "cepDestino" : "38840000",
+     "nomeDestinatario" : "Igor Mendes"
+}
+````
+## Banco de Dados Utilizado:
+```url:jdbc:postgresql://localhost:5432/postgres```
+- username: postgres
+- senha: 123456
 
 # Pré-requisitos
 
